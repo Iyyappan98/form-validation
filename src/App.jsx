@@ -31,7 +31,7 @@ function App() {
   const [formData, setFormData] = useState(null); // shared state
 
   return (
-    <Router>
+    <Router basename="/form-validation">
       <Header />
       <Routes>
         <Route path="/" element={<Form setFormData={setFormData} />} />
